@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+$cyan: hsl(179, 62%, 43%);
+$brightYellow: hsl(71, 73%, 54%);
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: white;
+  padding-top: 25px;
+  h1 {
+    color: $cyan;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    color: $brightYellow;
+    margin-bottom: 25px;
+  }
+
+  p {
+    color: $grayishBlue;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+}
+
+main {
+  background-color: $cyan;
+  padding-top: 25px;
+  color: white;
+  h2 {
+    span {
+      color: $lightGray;
+      font-weight: 400;
+    }
+    margin-bottom: 25px;
+  }
+  h3 {
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  button {
+    color: white;
+    width: 100%;
+    padding: 20px 25px;
+    font-weight: 700;
+    background-color: $brightYellow;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 2px 2px hsl(179, 54%, 41%);
+  }
+}
+
+footer {
+  padding: 25px 0;
+  background-color: $cyan;
+  opacity: 0.8;
+  h3 {
+    color: white;
+    margin-bottom: 25px;
+  }
+  ul {
+    list-style: none;
+    li {
+      color: $lightGray;
+    }
+  }
+}
